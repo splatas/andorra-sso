@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "f099378b-27d9-463c-8727-b3e2bfed6b45",
+		"name": "00.SSO-SpringbootApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7218845"
+	},
+	"item": [
+		{
+			"name": "GET 'userInfo' endpoiint",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJncC1oOHV5dHJ3cjJJWGFHTHNvbGVab0JmOUNSQUZoOFc4Mlc0dFl6SVIwIn0.eyJleHAiOjE2NTM2NzI4OTMsImlhdCI6MTY1MzY3MjU5MywianRpIjoiYWZkMjMyM2EtMDExMi00ZDI4LTg3YmQtZGM3ZTY3YjRlNTdjIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL3NwcmluZ2Jvb3Qta2V5Y2xvYWsiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNGFmZGI0ZWItMzA0Ny00M2E4LWExNWUtNmRkNjQxNjdiMWU5IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoicG9zdG1hbiIsInNlc3Npb25fc3RhdGUiOiIzYWZlOWViNC03YzJjLTQ4MmYtYjA2My00ODI4NmM3Y2QxOTEiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zcHJpbmdib290LWtleWNsb2FrIiwidW1hX2F1dGhvcml6YXRpb24iLCJ1c2VyIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiM2FmZTllYjQtN2MyYy00ODJmLWIwNjMtNDgyODZjN2NkMTkxIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJKdWFuIFBlcmV6IiwicHJlZmVycmVkX3VzZXJuYW1lIjoianVhbiIsImdpdmVuX25hbWUiOiJKdWFuIiwiZmFtaWx5X25hbWUiOiJQZXJleiIsImVtYWlsIjoianVhbkByZWRoYXQuY29tIn0.LsD040AO81apz4TwnG5_IcWG_M9pwMOQJA9L2iwy-ySc-Ma64eqzk5r1GsCb6updvSz6qJozqPz1VUchrwU1rc_uqmDD0poe78IL_N28vbCXuAdaz7n6EzV_Eq3gWrp2OCRn6NcwGhtCUwQQymvy9I6Yk9ryK3TktSpNREOVkjv3ADaGvXHIkCo_Qflj-6Awmhnn3Fe54LhaFds6DurB62Aj8IsEyWv34u3L2Lyjxeq0DSQf2dV_7sGcLET8S2TxQEW95gha0D1M8Q-1g1HeBOLQfF0t-HZt1V6DBDh5DgQH_iP7Nd82eyHrBd5m2u5ggi0jFEb_8GjcL6UcJPmh3Q",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "redhat01",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "juan",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "postman",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "http://localhost:8080/auth/realms/springboot-keycloak/protocol/openid-connect/token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "password_credentials",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "keycloak",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/userinfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"userinfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 'public' endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/public",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"public"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
